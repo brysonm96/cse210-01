@@ -1,0 +1,288 @@
+#CSE210 W01 Developer
+#Bryson Mouser 
+import time
+
+#def rowWin()
+
+#def columnWin()
+
+#def diagonalWin()
+
+def main():
+        one = "-"
+        two = "-"
+        three = "-"
+        four = "-"
+        five = "-"
+        six = "-"
+        seven = "-"
+        eight = "-"
+        nine = "-"
+        finished = False
+
+
+        while finished != True:
+
+        #Player 1's turn
+                print(one + " | " + two + " | " + three)
+                print("---------")
+                print(four + " | " + five + " | " + six)
+                print("---------")
+                print(seven + " | " + eight + " | " + nine)
+                print(" ")
+
+                print("Player 1 goes.")
+                choice = input("Choose a number 1-9 to place your x: ")
+
+        #change the game board
+                if choice == "1" and one == "-":
+                        one = "x"
+                elif choice == "1" and one != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "2" and two == "-":
+                        two = "x"
+                elif choice == "2" and two != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "3" and three == "-":
+                        three = "x"
+                elif choice == "3" and three != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "4" and four == "-":
+                        four= "x"
+                elif choice == "4" and four != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "5" and five == "-":
+                        five= "x"
+                elif choice == "5" and five != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+                
+                if choice == "6" and six == "-":
+                        six= "x"
+                elif choice == "6" and six != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "7" and seven == "-":
+                        seven= "x"
+                elif choice == "7" and seven != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+                
+                if choice == "8" and eight == "-":
+                        eight= "x"
+                elif choice == "8" and eight != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "9" and nine == "-":
+                        nine= "x"
+                elif choice == "9" and nine != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+        #Check for a win (ROW)
+                if one == two == three and one == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                if four == five == six and four == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                if seven == eight == nine and seven == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+        #Check for a win (COLUMN)
+                if one == four == seven and one == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                if two == five == eight and two == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                if three == six == nine and three == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+        #Check for a win (DIAGONAL)
+                if one == five == nine and one == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                if three == five == seven and three == "x":
+                        print("Player 1 wins!")
+                        finished = True
+                        exit()
+                        
+        #Player 2's Turn
+                print(one + " | " + two + " | " + three)
+                print("---------")
+                print(four + " | " + five + " | " + six)
+                print("---------")
+                print(seven + " | " + eight + " | " + nine)
+                print(" ")
+
+                print("Player 2 goes.")
+                choice = input("Choose a number 1-9 to place your o: ")
+
+        #Change the game board
+                if choice == "1" and one == "-":
+                        one = "o"
+                elif choice == "1" and one != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "2" and two == "-":
+                        two = "o"
+                elif choice == "2" and two != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "3" and three == "-":
+                        three = "o"
+                elif choice == "3" and three != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "4" and four == "-":
+                        four= "o"
+                elif choice == "4" and four != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "5" and five == "-":
+                        five= "o"
+                elif choice == "5" and five != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+                
+                if choice == "6" and six == "-":
+                        six= "o"
+                elif choice == "6" and six != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "7" and seven == "-":
+                        seven= "o"
+                elif choice == "7" and seven != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+                
+                if choice == "8" and eight == "-":
+                        eight= "o"
+                elif choice == "8" and eight != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+                if choice == "9" and nine == "-":
+                        nine= "o"
+                elif choice == "9" and nine != "-":
+                        print(" ")
+                        print("That space is unavailable.")
+                        print(" ")
+                        time.sleep(1)
+                ###########################################
+
+        #Check for a win (ROW)
+                if one == two == three and one == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                if four == five == six and four == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                if seven == eight == nine and seven == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+        #Check for a win (COLUMN)
+                if one == four == seven and one == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                if two == five == eight and two == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                if three == six == nine and three == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+        #Check for a win (DIAGONAL)
+                if one == five == nine and one == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                if three == five == seven and three == "o":
+                        print("Player 2 wins!")
+                        finished = True
+                        exit()
+                
+
+
+                        
+
+main()
